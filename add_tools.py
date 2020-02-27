@@ -1,16 +1,22 @@
 import json
 
-"""
-on ouvre le fichier urls
-"""
+#
+
 with open('urls.json', 'r') as f:
     data = json.loads(f.read())
 
 while True:
     """
-    on ajoute chaque entrée a la liste des urls ( CTRL-C pour sortir )
+    we ask the user to enter an url
     """
+
     inputurl = input('url: ')
+
+    """
+    each input are added to the url list
+    ( ctrl-c to leave )
+    """
+
     data.append('https://' + inputurl + '/')
 
     with open('urls.json', 'w') as f:
