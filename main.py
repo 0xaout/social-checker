@@ -27,13 +27,13 @@ for n, i in enumerate(data):
         page existe so the username is available
         """
 
-        print('\u001b[32m' + data[n] + username + ' -> AVAILABLE\033[0m', end='/n')
+        print('\u001b[32m' + data[n] + username + ' -> AVAILABLE\033[0m', end='\n')
 
     else:
         """
         for every other status code, the username is not available
         """
 
-        print('\u001b[31m' + data[n] + username + ' -> UNAVAILABLE\033[0m', end='/n')
+        print('\u001b[31m' + data[n] + username + ' -> UNAVAILABLE\033[0m', end='\n')
 
 
